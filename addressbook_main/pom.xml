@@ -57,6 +57,28 @@
                 <enabled>true</enabled>
             </snapshots>
         </pluginRepository>
+		 <pluginRepository>
+        <id>apache.snapshots</id>
+        <name>Apache Snapshots</name>
+        <url>http://repository.apache.org/content/groups/snapshots-group/</url>
+        <releases>
+            <enabled>false</enabled>
+        </releases>
+        <snapshots>
+            <enabled>true</enabled>
+        </snapshots>
+    </pluginRepository>
+	<pluginRepository>
+        <id>apache.public</id>
+        <name>Apache public</name>
+        <url>http://repository.apache.org/content/groups/public</url>
+        <releases>
+            <enabled>true</enabled>
+        </releases>
+        <snapshots>
+            <enabled>false</enabled>
+        </snapshots>
+    </pluginRepository>
     </pluginRepositories>
 
 
@@ -178,7 +200,7 @@
 
     <build>
         <plugins>
-            <plugin>
+	    <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.2</version>
